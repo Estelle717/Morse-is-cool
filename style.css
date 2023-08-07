@@ -5,7 +5,7 @@ h1{
 
 .encodeDecode {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 textarea {
