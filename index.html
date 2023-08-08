@@ -10,14 +10,13 @@
 
     <h1> Morse is cool </h1>
     
-
     <div class="encodeDecode" id="textToMorse">
         <div class="entryText">
             <form>
 
                 <label for="textbox"> Text to translate </label>
                 <textarea type="text" id="textbox" cols="50" rows="20" name="textbox" placeholder="Enter your text here"></textarea>
-                <button type="button">Encode</button>
+                <button type="button" id="buttonEncode">Encode</button>
 
             </form>
         </div>
@@ -26,14 +25,16 @@
 
             <label>Morse code here</label>
                 <div class="displayArea">
-                <p>Wait for mor(s)e</p>
+                <p id="displayMorse">Wait for mor(s)e</p>
                 </div>
         </div>
     </div>
 
+    <script src="morse-project-scrip.js">
 
 
-    <script src="morse-project-scrip.js"></script>
+
+    </script>
 
 </body>
 </html>
