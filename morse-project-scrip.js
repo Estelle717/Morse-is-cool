@@ -40,12 +40,12 @@ const encode = (text) => {
 	for (i = 0; i < text.length; i++) {
 		messageMorse += translateLatinCharacter(message[i]) + " ";			
 	}
-	console.log(messageMorse)
+	//console.log(messageMorse)
 	return messageMorse;
 }
 
-encode ('Morse Code')
-encode ('merde')
+//encode ('Morse Code')
+//encode ('merde')
 
 
 

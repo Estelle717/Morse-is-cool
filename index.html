@@ -37,11 +37,22 @@
         //const boutton = document.getElementById("buttonEncode")
         //console.log(boutton)
         const handleEncode = () => {
-            console.log("I'm gonna put this computer in the fires of hell")
+            //console.log("I'm gonna put this computer into the fires of hell")
+            message = document.getElementById("textbox").value //get text from textarea
+            //console.log(message)
+            //let messageMorse= encode(message)
+            //console.log(messageMorse)
+            document.getElementById("displayMorse").innerHTML = encode(message)
         }
         document.getElementById("buttonEncode").addEventListener("click", handleEncode)
         
-
+        /*const getText = () => {
+            message = document.getElementById("textbox").value
+            console.log (message)
+        }
+        document.getElementById("textbox").addEventListener("click", getText)
+        console.log(message)*/
+        
 
     </script>
 
