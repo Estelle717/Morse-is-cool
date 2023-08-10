@@ -78,6 +78,11 @@
         document.getElementById("textbox").addEventListener("click", getText)
         console.log(message)*/
         
+        const handleDecode = () => {
+            message = document.getElementById("morsebox").value
+            document.getElementById("displayText").innerHTML = decode(message)
+        }
+        document.getElementById("buttonDecode").addEventListener("click", handleDecode)
 
     </script>
 
