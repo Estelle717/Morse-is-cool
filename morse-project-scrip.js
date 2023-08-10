@@ -40,13 +40,8 @@ const encode = (text) => {
 	for (i = 0; i < text.length; i++) {
 		messageMorse += translateLatinCharacter(message[i]) + " ";			
 	}
-	//console.log(messageMorse)
 	return messageMorse;
 }
-
-//encode ('Morse Code')
-//encode ('merde')
-
 
 const morseToLatin = {
 	'-': "T",
@@ -80,35 +75,19 @@ const morseToLatin = {
 
 const getMorseCharacterList = (morse) => {
     let morseArray = morse.split(" "); 			
-	//console.log (morseArray);
-	//console.log (morseArray.length)
 	return morseArray
 }
 
-//getMorseCharacterList (".... ..") // hi
-
 const translateMorseCharacter = (char) => {
-	//console.log("translate", morseToLatin[char]);
 	return morseToLatin[char];
 }
-
-//translateMorseCharacter ("....") // H
 
 const decode = (text) => {
 	let morseArray = getMorseCharacterList (text);
 	let messageText = [];
-	//console.log ("morseArray", morseArray)
 
 	for (i = 0; i < morseArray.length; i++) {
-		messageText.push(translateMorseCharacter(morseArray[i]));
-		//console.log(messageText[i]);			
+		messageText.push(translateMorseCharacter(morseArray[i]));		
 	}
-	//console.log(messageText.length)
-	console.log(messageText.join(""))
 	return messageText.join("");
 }
-
-decode (".... .. / .... ..")
-decode (".-- .... .- - / .. ... / - .... .. ...")
-decode ("-- --- .-. ... . / .. ... / -.-. --- --- .-..")
-

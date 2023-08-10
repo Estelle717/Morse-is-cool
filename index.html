@@ -13,16 +13,13 @@
     <div class="encodeDecode" id="textToMorse">
         <div class="entryText" id="entryTextHere">
             <form>
-
                 <label for="textbox"> Text to translate </label>
                 <textarea type="text" id="textbox"  name="textbox" placeholder="Enter your text here"></textarea>
                 <button type="button" id="buttonEncode">Encode</button>
-                
             </form>
         </div>
 
         <div class="displayTranslation" id="morseResultHere">
-
             <label>Morse code here</label>
                 <div class="displayArea">
                 <p id="displayMorse">Wait for mor(s)e</p>
@@ -35,48 +32,29 @@
     <div class="encodeDecode" id="morseToText">
         <div class="entryText" id="morseCodeHere">
             <form>
-
                 <label for="morsebox"> Morse to translate </label>
                 <textarea type="text" id="morsebox"  name="morsebox" placeholder="Enter your morse code here"></textarea>
-                <button type="button" id="buttonDecode">Decode</button>
-                
+                <button type="button" id="buttonDecode">Decode</button>               
             </form>
         </div>
 
         <div class="displayTranslation" id="morseResultHere">
-
             <label>Text here</label>
                 <div class="displayArea">
                 <p id="displayText">Wait for text</p>
                 </div>
         </div>
-
     </div>
-
-
 
     <script src="morse-project-scrip.js"></script>
 
     <script>
 
-        //const boutton = document.getElementById("buttonEncode")
-        //console.log(boutton)
         const handleEncode = () => {
-            //console.log("I'm gonna put this computer into the fires of hell")
             message = document.getElementById("textbox").value //get text from textarea
-            //console.log(message)
-            //let messageMorse= encode(message)
-            //console.log(messageMorse)
             document.getElementById("displayMorse").innerHTML = encode(message)
         }
         document.getElementById("buttonEncode").addEventListener("click", handleEncode)
-        
-        /*const getText = () => {
-            message = document.getElementById("textbox").value
-            console.log (message)
-        }
-        document.getElementById("textbox").addEventListener("click", getText)
-        console.log(message)*/
         
         const handleDecode = () => {
             message = document.getElementById("morsebox").value
