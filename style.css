@@ -24,6 +24,7 @@ label {
     height: 200px;
     width: 400px;
     background-color: white;
+    overflow-y: scroll;
 }
 
 .letsGetSomeSpaceInHere {
