@@ -147,3 +147,16 @@ const decode = (text) => {
 	}
 	return messageText.join("");
 }
+
+const handleEncode = () => {
+	message = document.getElementById("textbox").value //get text from textarea
+	document.getElementById("displayMorse").innerHTML = encode(message)
+}
+document.getElementById("buttonEncode").addEventListener("click", handleEncode)
+
+const handleDecode = () => {
+	message = document.getElementById("morsebox").value
+	document.getElementById("displayText").innerHTML = decode(message)
+}
+document.getElementById("buttonDecode").addEventListener("click", handleDecode)
+
