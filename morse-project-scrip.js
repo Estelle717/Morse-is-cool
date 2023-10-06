@@ -53,7 +53,8 @@ const latinToMorse = {
 	'-':'-....-',
 	'$':'...-..-',
 	"'":".----.",
-	'"':'.-..-.'
+	'"':'.-..-.',
+	'/':'-..-.'
 }
 
 const translateLatinCharacter = (char) => {
@@ -124,7 +125,8 @@ const morseToLatin = {
 	'-....-':"-",
 	'...-..-':"$",
 	".----.":"'",
-	'.-..-.':'"'
+	'.-..-.':'"',
+	'-..-.':"/"
 }
 
 const getMorseCharacterList = (morse) => {
