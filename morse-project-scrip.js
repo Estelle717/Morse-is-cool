@@ -50,3 +50,18 @@ const handleDecode = () => {
 }
 document.getElementById("buttonDecode").addEventListener("click", handleDecode)
 
+// copy buttons actions
+
+const copyMorse = () => {
+	messageMorse = document.getElementById("displayMorse").innerHTML
+	navigator.clipboard.writeText(messageMorse)
+	alert(`Copied the text:  ${messageMorse}`)
+}
+document.getElementById("buttonCopyMorse").addEventListener("click", copyMorse)
+
+const copyText = () => {
+	messageText = document.getElementById("displayText").innerHTML
+	navigator.clipboard.writeText(messageText)
+	alert(`Copied the text:  ${messageText}`)
+}
+document.getElementById("buttonCopyText").addEventListener("click", copyText)
